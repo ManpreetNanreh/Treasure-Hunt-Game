@@ -274,7 +274,7 @@ public class GamePanel extends JPanel{
 	}
 
 	/**
-	 * Gets the button responsible for throwing sonars..
+	 * Gets the button responsible for throwing sonars.
 	 * 
 	 * @return JButton The Sonar button.
 	 */
