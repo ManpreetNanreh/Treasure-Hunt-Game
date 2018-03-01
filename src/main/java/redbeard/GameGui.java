@@ -79,14 +79,15 @@ public class GameGui {
 				addGamePanelButtonListener();
 				mainFrame.remove(menuPanel);
 				mainFrame.add(gamePanel);
-				mainFrame.repaint();
 				mainFrame.revalidate();
+				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("Quit to Menu")) {
 				//Remove the game panel and display the mene panel.
 				mainFrame.remove(gamePanel);
 				mainFrame.add(menuPanel);
 				mainFrame.repaint();
 				mainFrame.revalidate();
+				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("N")) {
 				//Move the player to the specified direction.
 				try {
@@ -98,6 +99,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("S")) {
 				//Move the player to the specified direction.
@@ -110,6 +112,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("E")) {
 				//Move the player to the specified direction.
@@ -122,6 +125,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("W")) {
 				//Move the player to the specified direction.
@@ -134,6 +138,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("NE")) {
 				//Move the player to the specified direction.
@@ -146,6 +151,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("NW")) {
 				//Move the player to the specified direction.
@@ -158,6 +164,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("SW")) {
 				//Move the player to the specified direction.
@@ -170,6 +177,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("SE")) {
 				//Move the player to the specified direction.
@@ -182,6 +190,7 @@ public class GameGui {
 					// TODO Auto-generated catch block
 					e1.printStackTrace();
 				}
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("SONAR")) {
 				//Drop the sonar in order to find the treasure.
@@ -196,6 +205,7 @@ public class GameGui {
 				}
 				//Update the number of sonars remaining.
 				gamePanel.setSonarLabel();
+				mainFrame.revalidate();
 				mainFrame.repaint();
 			}
 			
