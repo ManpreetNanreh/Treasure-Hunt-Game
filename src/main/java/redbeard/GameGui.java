@@ -85,7 +85,6 @@ public class GameGui {
 				//Remove the game panel and display the mene panel.
 				mainFrame.remove(gamePanel);
 				mainFrame.add(menuPanel);
-				mainFrame.repaint();
 				mainFrame.revalidate();
 				mainFrame.repaint();
 			}else if(e.getActionCommand().equals("N")) {
